@@ -12,9 +12,7 @@ const PriceOptions = () => {
         "Locker facility",
         "Free drinking water",
         "No personal trainer",
-        "Limited cardio machines",
-        "No access to group classes",
-        "Open gym access (Off-peak hours only)"
+       
       ]
     },
     {
@@ -26,11 +24,7 @@ const PriceOptions = () => {
         "Locker facility",
         "Personal trainer (5 sessions/month)",
         "Basic diet plan",
-        "Access to group workout sessions",
-        "Cardio & strength training equipment",
-        "Access to stretching & warm-up zone",
-        "Discount on gym merchandise (5%)",
-        "Shower facility"
+       
       ]
     },
     {
@@ -42,13 +36,7 @@ const PriceOptions = () => {
         "Personal trainer (unlimited sessions)",
         "Customized diet plan",
         "Sauna & steam room access",
-        "Group classes & yoga sessions",
-        "Priority customer support",
-        "HIIT & functional training zone",
-        "Towel service included",
-        "Discount on gym merchandise (10%)",
-        "Nutritional counseling",
-        "Massage & recovery sessions"
+       
       ]
     },
     {
@@ -61,26 +49,21 @@ const PriceOptions = () => {
         "Advanced customized diet & meal planning",
         "Private training sessions",
         "Exclusive VIP lounge access",
-        "Unlimited sauna, steam & jacuzzi",
-        "Premium locker & towel service",
-        "Access to all fitness classes (Yoga, Zumba, HIIT, etc.)",
-        "Physiotherapy & injury recovery support",
-        "Free supplements (monthly supply)",
-        "Early access to gym events & workshops",
-        "Discount on gym merchandise (15%)",
         "VIP parking space"
       ]
     }
   ];
 
   return (
-    <div>
+    <div className=" m-12">
       <h2 className=" text-4xl">Best Prices in Town</h2>
-      <ul>
-        {priceOptions.map(option => (
+     
+       <div className=" grid md:grid-cols-3 gap-6">
+       {priceOptions.map(option => (
           <PriceOption key={option.id} option={option} />
         ))}
-      </ul>
+       </div>
+     
     </div>
   );
 };
