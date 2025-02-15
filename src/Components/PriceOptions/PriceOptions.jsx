@@ -39,24 +39,12 @@ const PriceOptions = () => {
        
       ]
     },
-    {
-      "id": 4,
-      "name": "Elite",
-      "price": 8000,
-      "features": [
-        "24/7 gym access",
-        "Dedicated personal trainer",
-        "Advanced customized diet & meal planning",
-        "Private training sessions",
-        "Exclusive VIP lounge access",
-        "VIP parking space"
-      ]
-    }
+   
   ];
 
   return (
     <div className=" m-12">
-      <h2 className=" text-4xl">Best Prices in Town</h2>
+      <h2 className=" md:text-4xl text-center mb-8 font-extrabold">Best Prices in Town</h2>
      
        <div className=" grid md:grid-cols-3 gap-6">
        {priceOptions.map(option => (
